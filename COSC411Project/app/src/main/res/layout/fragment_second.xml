@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_one"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="username" />
+    <EditText
+        android:id="@+id/edit_one"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/textview_one"/>
+    <TextView
+        android:id="@+id/textview_two"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="email"
+        android:layout_below="@id/textview_one"/>
+    <EditText
+        android:id="@+id/edit_two"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edit_one"
+        android:layout_toRightOf="@id/textview_two"/>
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        android:layout_below="@id/textview_two"
+        android:onClick="back"
+        />
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:layout_below="@id/textview_two"
+        android:layout_toRightOf="@id/button_back"
+        android:onClick="next"/>
+</RelativeLayout>
