@@ -10,14 +10,24 @@
     <ScrollView
         android:layout_width="match_parent"
         android:id="@+id/scroll"
-        android:layout_height="match_parent">
+        android:layout_height="650dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/linear">
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_alignRight="@id/scroll"
+        android:text="login"
+        android:onClick="login"
+        >
+
+    </Button>
 </RelativeLayout>

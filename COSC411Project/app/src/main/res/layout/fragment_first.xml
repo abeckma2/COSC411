@@ -10,22 +10,24 @@
     <ScrollView
         android:layout_width="match_parent"
         android:id="@+id/scroll"
+        android:background="#999999"
         android:layout_height="500dp">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/linear">
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
+
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_below="@+id/scroll"
+        android:layout_margin="15dp"
         android:id="@+id/edit"/>
-
     <Button
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
