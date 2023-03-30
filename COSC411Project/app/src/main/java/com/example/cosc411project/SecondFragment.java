@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import io.realm.mongodb.AppException;
+//import io.realm.mongodb.AppException;
 
 import androidx.appcompat.app.AppCompatActivity;
 
